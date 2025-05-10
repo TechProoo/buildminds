@@ -29,7 +29,20 @@ const App = () => {
         <Toaster />
         <Sonner />
         {loading && <Loader />}
-        <div className="artistic-border min-h-screen">
+        <div className="artistic-border min-h-screen crt-effect">
+          <div className="absolute inset-0 z-0 opacity-10 pointer-events-none">
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary/5 via-transparent to-transparent"></div>
+            <div className="grid grid-cols-12 h-full">
+              {Array(12).fill(0).map((_, i) => (
+                <div key={i} className="border-r border-white/5"></div>
+              ))}
+            </div>
+            <div className="grid grid-rows-12 w-full h-full">
+              {Array(12).fill(0).map((_, i) => (
+                <div key={i} className="border-b border-white/5"></div>
+              ))}
+            </div>
+          </div>
           <BrowserRouter>
             <Routes>
               <Route path="/" element={<Index />} />
