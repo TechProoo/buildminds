@@ -43,6 +43,10 @@
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Artistic border variables */
+    --border-glow: 263 70% 50%;
+    --border-accent: 217 91% 60%;
   }
 }
 
@@ -67,4 +71,101 @@
   .terminal-text {
     @apply font-mono border-r-2 border-primary overflow-hidden whitespace-nowrap animate-typing;
   }
+  
+  /* Artistic border styling */
+  .artistic-border {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    padding: 2px;
+  }
+  
+  .artistic-border::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(to right, 
+      hsl(var(--border-accent)), 
+      hsl(var(--border-glow)), 
+      hsl(var(--border-accent))
+    );
+    box-shadow: 0 0 15px 1px hsl(var(--border-glow) / 60%);
+    animation: border-pulse 4s infinite alternate;
+  }
+  
+  .artistic-border::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(to right, 
+      hsl(var(--border-accent)), 
+      hsl(var(--border-glow)), 
+      hsl(var(--border-accent))
+    );
+    box-shadow: 0 0 15px 1px hsl(var(--border-glow) / 60%);
+    animation: border-pulse 4s infinite alternate-reverse;
+  }
+  
+  .glass {
+    @apply bg-black/30 backdrop-blur-md border border-white/10 rounded-lg shadow-xl;
+  }
+  
+  .glass-card {
+    @apply glass;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .glass-card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid transparent;
+    border-image: linear-gradient(
+      45deg,
+      hsl(var(--primary) / 30%) 0%, 
+      hsl(var(--secondary) / 50%) 25%, 
+      transparent 50%,
+      hsl(var(--secondary) / 50%) 75%, 
+      hsl(var(--primary) / 30%) 100%
+    ) 1;
+    pointer-events: none;
+    border-radius: inherit;
+  }
+}
+
+@layer base {
+  @keyframes border-pulse {
+    0% { opacity: 0.4; }
+    50% { opacity: 0.8; }
+    100% { opacity: 0.4; }
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: hsl(var(--primary)) }
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+}
+
+@layer utilities {
+  /* Add any utility classes here */
 }

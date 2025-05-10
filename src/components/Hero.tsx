@@ -33,25 +33,25 @@ function BuildMinds() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button 
-                className="bg-gradient-to-r from-primary to-secondary hover:brightness-110 transition-all text-lg py-6"
+                className="bg-gradient-to-r from-primary to-secondary hover:brightness-110 transition-all text-lg py-6 relative overflow-hidden"
                 asChild
               >
-                <a href="#projects">
+                <a href="#projects" className="glass-button">
                   View Our Projects <ArrowRight className="ml-2 h-5 w-5" />
                 </a>
               </Button>
               <Button 
                 variant="outline" 
-                className="text-white border-white/20 hover:bg-white/10 text-lg py-6"
+                className="text-white border-white/20 hover:bg-white/10 text-lg py-6 relative overflow-hidden"
                 asChild
               >
-                <a href="#about">Meet Our Team</a>
+                <a href="#about" className="glass-button">Meet Our Team</a>
               </Button>
             </div>
           </div>
           
           <div className="flex-1 w-full max-w-xl">
-            <div className="glass p-4 rounded-xl shadow-2xl">
+            <div className="glass-card p-4 rounded-xl shadow-2xl">
               <div className="bg-black/80 rounded-lg p-4 font-mono text-sm overflow-x-auto">
                 <pre className="text-gray-300">
                   <code>{codeSnippet}</code>
