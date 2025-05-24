@@ -29,7 +29,7 @@ const Footer = () => {
               </div>
             </a>
             <p className="text-gray-400 mt-2">
-              Empowering young developers to build the future
+              Building the future
             </p>
           </div>
           
