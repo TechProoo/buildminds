@@ -40,10 +40,9 @@ function BuildMinds() {
         <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
           <div className="flex-1 space-y-6 text-center lg:text-left">
             <h1 className="animate-fade-in text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight vintage-text-shadow">
-              <span className="text-gradient animate-glow">Build Minds.</span>{" "}
-              Elite Builders
+              <span className="text-gradient animate-glow">Build Minds.</span>
               <br />
-              <span className="terminal-text scan-line">
+              <span className="">
                 Building The Future
               </span>
             </h1>
