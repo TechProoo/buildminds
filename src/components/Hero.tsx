@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import DotCard from "@/components/ui/moving-dot-card";
 
 const Hero = () => {
   const codeSnippet = `
