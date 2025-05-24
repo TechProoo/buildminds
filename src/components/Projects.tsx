@@ -2,6 +2,19 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import ProjectCard from "./ProjectCard";
 import { cn } from "@/lib/utils";
+import medmapImg from "@/assets/projects/medmap.png";
+import uninavImg from "@/assets/projects/uninav.png";
+import perfectArtsImg from "@/assets/projects/perfect-arts.png";
+import ninejamarketImg from "@/assets/projects/9jamarket.png";
+import habitualImg from "@/assets/projects/habitual.png";
+import telegramBotImg from "@/assets/projects/telegram-bot.png";
+import smooveaiImg from "@/assets/projects/smooveai.png";
+import vaavImg from "@/assets/projects/vaav.png";
+import venduitImg from "@/assets/projects/venduit.png";
+import okmTreatsImg from "@/assets/projects/okm-treats.png";
+import classyCrumbleImg from "@/assets/projects/classy-crumble.png";
+import anonImg from "@/assets/projects/anon.png";
+import eniolaStoreImg from "@/assets/projects/eniola-store.png";
 
 const Projects = () => {
   const [filter, setFilter] = useState("all");
@@ -12,7 +25,7 @@ const Projects = () => {
       title: "Medmap",
       description:
         "An AI-powered healthcare platform that helps users locate nearby pharmacies with specific medications in stock. Features include real-time inventory tracking, an intelligent AI health assistant for personalized advice, and integration with local healthcare providers. The platform bridges the gap between patients and accessible healthcare services across Nigeria.",
-      image: "/src/assets/projects/medmap.png",
+      image: medmapImg,
       technologies: ["React", "Next.js", "Node.js", "AI/ML", "MongoDB", "Google Maps API", "OpenAI API", "Socket.io"],
       category: "ai",
       featured: true,
@@ -24,7 +37,7 @@ const Projects = () => {
       title: "UniNav",
       description:
         "A collaborative university study materials platform that enables students to upload, organize, and discover course-related resources by faculty and department. Features include advanced search functionality, peer review systems, discussion forums, and analytics to track helpful content, creating a comprehensive knowledge base for academic collaboration.",
-      image: "/src/assets/projects/uninav.png",
+      image: uninavImg,
       technologies: ["React", "Node.js", "PostgreSQL", "Express", "Socket.io", "Elasticsearch", "NestJS", "AWS S3"],
       category: "web",
       featured: true,
@@ -36,7 +49,7 @@ const Projects = () => {
       title: "9jamarket",
       description:
         "A digital trade platform connecting traditional markets, vendors, and consumers across Nigeria. The platform enables vendors to showcase products online while providing customers with real-time inventory, price comparisons, and secure payment options. Features include geo-location services, multi-language support, and integrated logistics for delivery coordination.",
-      image: "/src/assets/projects/9jamarket.png",
+      image: ninejamarketImg,
       technologies: ["React", "Node.js", "MongoDB", "Express", "Socket.io", "Paystack"],
       category: "web",
       featured: true,
@@ -48,7 +61,7 @@ const Projects = () => {
       title: "Habitual",
       description:
         "A productivity web app with a structured API for precise habit tracking, goal setting, and team collaboration. It allows users to create and monitor daily habits, set long-term goals, and collaborate efficiently within teams.",
-      image: "/src/assets/projects/habitual.png",
+      image: habitualImg,
       technologies: ["NestJS", "React", "PostgreSQL", "Node.js"],
       category: "web",
       liveUrl: "https://habitual-coded.netlify.app/",
@@ -59,7 +72,7 @@ const Projects = () => {
       title: "Telegram Bot",
       description:
         "A powerful Telegram bot for managing CopperX cryptocurrency transactions, wallet operations, and user authentication. This bot enables seamless cryptocurrency transfers and wallet management through a convenient Telegram interface.",
-      image: "/src/assets/projects/telegram-bot.png",
+      image: telegramBotImg,
       technologies: ["Node.js", "Redis", "WebSockets", "Telegram API"],
       category: "blockchain",
       githubUrl: "https://github.com/prospercoded/copperx-bot",
@@ -70,7 +83,7 @@ const Projects = () => {
       title: "SmooveAI",
       description:
         "An innovative AI-driven platform that focuses on teaching programming concepts through interactive conversations. SmooveAI enhances the learning experience by breaking down complex coding topics and making them easier to understand.",
-      image: "/src/assets/projects/smooveai.png",
+      image: smooveaiImg,
       technologies: ["React", "AI/ML", "Node.js", "OpenAI API"],
       category: "ai",
       featured: true,
@@ -81,7 +94,7 @@ const Projects = () => {
       title: "VAAV",
       description:
         "A commercial website for finding, renting, or purchasing plug-and-play batteries (PowerCube) that are clean and affordable. The platform offers a seamless and efficient way to access renewable energy solutions.",
-      image: "src/assets/projects/vaav.png",
+      image: vaavImg,
       technologies: ["React", "Tailwind CSS", "Vercel", "JavaScript"],
       category: "web",
       liveUrl: "https://vaav-n.vercel.app/",
@@ -91,7 +104,7 @@ const Projects = () => {
       title: "Venduit",
       description:
         "A platform designed to showcase and invest in various business and financial opportunities, providing users with insights and investment options across multiple industries.",
-      image: "/src/assets/projects/venduit.png",
+      image: venduitImg,
       technologies: ["Next.js", "TypeScript", "Vercel", "React"],
       category: "web",
       liveUrl: "https://venduit.vercel.app/",
@@ -101,7 +114,7 @@ const Projects = () => {
       title: "OKM Treats",
       description:
         "A delightful, user-friendly online bakery experience, featuring easy product browsing, seamless checkout, and a unique menu centered around the ever-popular banana bread. Perfect for customers to place orders with a smooth shopping journey.",
-      image: "/src/assets/projects/okm-treats.png",
+      image: okmTreatsImg,
       technologies: ["React", "Next.js", "JavaScript", "CSS"],
       category: "web",
       liveUrl: "https://okm-treats.netlify.app/",
@@ -111,7 +124,7 @@ const Projects = () => {
       title: "Classy Crumble",
       description:
         "A clean, modern news platform designed to deliver the latest stories with a seamless user experience. Features an intuitive layout, smooth navigation, and dynamic content presentation—perfect for keeping users engaged.",
-      image: "/src/assets/projects/classy-crumble.png",
+      image: classyCrumbleImg,
       technologies: ["React", "JavaScript", "CSS", "HTML"],
       category: "web",
       liveUrl: "https://classy-crumble-f764b0.netlify.app/",
@@ -121,7 +134,7 @@ const Projects = () => {
       title: "Perfect Arts",
       description:
         "A black-and-white themed portfolio website for a renowned hyperrealism artist. With an improved SEO strategy, this website ranks no. 1 on the Google search engine for relevant search terms.",
-      image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81",
+      image: perfectArtsImg,
       technologies: ["Vanilla JS", "HTML", "CSS", "SEO"],
       category: "web",
       liveUrl: "https://perfect-arts.vercel.app/",
@@ -141,7 +154,7 @@ const Projects = () => {
       title: "Anon",
       description:
         "Anon provides a simple interface for creating groups and having discussions.",
-      image: "/src/assets/projects/anon.png",
+      image: anonImg,
       technologies: ["React", "Next.js", "Tailwind CSS", "JavaScript", "NextJS", "Cloudinary", "Cypress", "MongoDB", "Prisma"],
       category: "web",
       liveUrl: "https://anon-posts.vercel.app/",
@@ -151,7 +164,7 @@ const Projects = () => {
       title: "Eniola Store",
       description:
         "A black-and-white themed portfolio website for a renowned hyperrealism artist. With an improved SEO strategy, this website ranks no. 1 on the Google search engine for relevant search terms.",
-      image: "src/assets/projects/perfect.png",
+      image: eniolaStoreImg,
       technologies: ["Vanilla JS", "HTML", "CSS", "SEO"],
       category: "web",
       featured: true,
