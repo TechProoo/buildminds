@@ -8,6 +8,7 @@ import { useState, useEffect } from "react";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Loader from "./components/Loader";
+import ShootingStars from "./components/ShootingStars";
 
 const queryClient = new QueryClient();
 
@@ -29,7 +30,8 @@ const App = () => {
         <Toaster />
         <Sonner />
         {loading && <Loader />}
-        <div className="artistic-border min-h-screen crt-effect">
+        <div className="artistic-border min-h-screen crt-effect relative">
+          <ShootingStars />
           <div className="absolute inset-0 z-0 opacity-10 pointer-events-none">
             <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary/5 via-transparent to-transparent"></div>
             <div className="grid grid-cols-12 h-full">
@@ -43,13 +45,15 @@ const App = () => {
               ))}
             </div>
           </div>
-          <BrowserRouter>
-            <Routes>
-              <Route path="/" element={<Index />} />
-              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          </BrowserRouter>
+          <div className="relative z-10">
+            <BrowserRouter>
+              <Routes>
+                <Route path="/" element={<Index />} />
+                {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+            </BrowserRouter>
+          </div>
         </div>
       </TooltipProvider>
     </QueryClientProvider>
