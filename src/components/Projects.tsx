@@ -25,7 +25,7 @@ const Projects = () => {
       description:
         "A collaborative university study materials platform that enables students to upload, organize, and discover course-related resources by faculty and department. Features include advanced search functionality, peer review systems, discussion forums, and analytics to track helpful content, creating a comprehensive knowledge base for academic collaboration.",
       image: "/src/assets/projects/uninav.png",
-      technologies: ["React", "Node.js", "PostgreSQL", "Express", "Socket.io", "Elasticsearch", "NestJS"],
+      technologies: ["React", "Node.js", "PostgreSQL", "Express", "Socket.io", "Elasticsearch", "NestJS", "AWS S3"],
       category: "web",
       featured: true,
       liveUrl: "https://uninav.live",
@@ -71,10 +71,10 @@ const Projects = () => {
       title: "Telegram Bot",
       description:
         "A powerful Telegram bot for managing CopperX cryptocurrency transactions, wallet operations, and user authentication. This bot enables seamless cryptocurrency transfers and wallet management through a convenient Telegram interface.",
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475",
+      image: "/src/assets/projects/telegram-bot.png",
       technologies: ["Node.js", "Redis", "WebSockets", "Telegram API"],
       category: "blockchain",
-      githubUrl: "#",
+      githubUrl: "https://github.com/prospercoded/copperx-bot",
       liveUrl: "https://t.me/buildminds_copperx_payout_bot",
     },
    
@@ -83,11 +83,11 @@ const Projects = () => {
       title: "SmooveAI",
       description:
         "An innovative AI-driven platform that focuses on teaching programming concepts through interactive conversations. SmooveAI enhances the learning experience by breaking down complex coding topics and making them easier to understand.",
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
+      image: "/src/assets/projects/smooveai.png",
       technologies: ["React", "AI/ML", "Node.js", "OpenAI API"],
       category: "ai",
       featured: true,
-      liveUrl: "#",
+      liveUrl: "https://smoove-ai.netlify.app/",
     },
     {
       id: 8,
@@ -114,23 +114,33 @@ const Projects = () => {
       title: "OKM Treats",
       description:
         "A delightful, user-friendly online bakery experience, featuring easy product browsing, seamless checkout, and a unique menu centered around the ever-popular banana bread. Perfect for customers to place orders with a smooth shopping journey.",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
+      image: "/src/assets/projects/okm-treats.png",
       technologies: ["React", "Next.js", "JavaScript", "CSS"],
       category: "web",
-      liveUrl: "#",
+      liveUrl: "https://okm-treats.netlify.app/",
     },
     {
       id: 11,
-      title: "News Website",
+      title: "Classy Crumble",
       description:
         "A clean, modern news platform designed to deliver the latest stories with a seamless user experience. Features an intuitive layout, smooth navigation, and dynamic content presentation—perfect for keeping users engaged.",
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
+      image: "/src/assets/projects/classy-crumble.png",
       technologies: ["React", "JavaScript", "CSS", "HTML"],
       category: "web",
-      liveUrl: "#",
+      liveUrl: "https://classy-crumble-f764b0.netlify.app/",
     },
     {
       id: 12,
+      title: "Perfect Arts",
+      description:
+        "A black-and-white themed portfolio website for a renowned hyperrealism artist. With an improved SEO strategy, this website ranks no. 1 on the Google search engine for relevant search terms.",
+      image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81",
+      technologies: ["Vanilla JS", "HTML", "CSS", "SEO"],
+      category: "web",
+      liveUrl: "https://perfect-arts.vercel.app/",
+    },
+    {
+      id: 14,
       title: "Helio Power",
       description:
         "A sleek, professional portfolio showcasing a solar energy business with eco-friendly products. The website highlights Helio Power's mission, offerings, and commitment to sustainability with an engaging user interface.",
@@ -148,16 +158,6 @@ const Projects = () => {
       technologies: ["React", "Next.js", "Tailwind CSS", "JavaScript", "NextJS", "Cloudinary", "Cypress", "MongoDB", "Prisma"],
       category: "web",
       liveUrl: "https://anon-posts.vercel.app/",
-    },
-    {
-      id: 14,
-      title: "Perfect Arts",
-      description:
-        "A black-and-white themed portfolio website for a renowned hyperrealism artist. With an improved SEO strategy, this website ranks no. 1 on the Google search engine for relevant search terms.",
-      image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81",
-      technologies: ["Vanilla JS", "HTML", "CSS", "SEO"],
-      category: "web",
-      liveUrl: "https://perfect-arts.vercel.app/",
     },
    
   ];
