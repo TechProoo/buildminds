@@ -32,7 +32,7 @@ const TeamMember = ({ name, role, bio, image, links }: TeamMemberProps) => {
         <div className="absolute bottom-0 left-0 w-full p-4">
           <h3 className="text-xl font-bold text-white mb-1">{name}</h3>
           <p className={cn(
-            "inline-block text-sm font-medium px-2 py-1 rounded-full",
+            "inline-block text-xs font-medium px-2 py-0.5 rounded-full whitespace-nowrap overflow-hidden text-ellipsis",
             "bg-primary/30 text-primary-foreground"
           )}>
             {role}
