@@ -7,9 +7,44 @@ const Projects = () => {
   const [filter, setFilter] = useState("all");
 
   const projects = [
-    
     {
       id: 1,
+      title: "Medmap",
+      description:
+        "An AI-powered healthcare platform that helps users locate nearby pharmacies with specific medications in stock. Features include real-time inventory tracking, an intelligent AI health assistant for personalized advice, and integration with local healthcare providers. The platform bridges the gap between patients and accessible healthcare services across Nigeria.",
+      image: "/src/assets/projects/medmap.png",
+      technologies: ["React", "Next.js", "Node.js", "AI/ML", "MongoDB", "Google Maps API", "OpenAI API", "Socket.io"],
+      category: "ai",
+      featured: true,
+      liveUrl: "https://medmap.live/",
+      githubUrl: "https://github.com/prospercoded/medmap",
+    },
+    {
+      id: 2,
+      title: "UniNav",
+      description:
+        "A collaborative university study materials platform that enables students to upload, organize, and discover course-related resources by faculty and department. Features include advanced search functionality, peer review systems, discussion forums, and analytics to track helpful content, creating a comprehensive knowledge base for academic collaboration.",
+      image: "/src/assets/projects/uninav.png",
+      technologies: ["React", "Node.js", "PostgreSQL", "Express", "Socket.io", "Elasticsearch", "NestJS"],
+      category: "web",
+      featured: true,
+      liveUrl: "https://uninav.live",
+      githubUrl: "https://github.com/prospercoded/uninav",
+    },
+    {
+      id: 3,
+      title: "9jamarket",
+      description:
+        "A digital trade platform connecting traditional markets, vendors, and consumers across Nigeria. The platform enables vendors to showcase products online while providing customers with real-time inventory, price comparisons, and secure payment options. Features include geo-location services, multi-language support, and integrated logistics for delivery coordination.",
+      image: "/src/assets/projects/9jamarket.png",
+      technologies: ["React", "Node.js", "MongoDB", "Express", "Socket.io", "Paystack"],
+      category: "web",
+      featured: true,
+      liveUrl: "https://9jamarket.com",
+      githubUrl: "https://github.com/prospercoded/9jamarket-Frontend",
+    },
+    {
+      id: 4,
       title: "Eniola Store",
       description:
         "An e-commerce platform enabling market vendors to showcase products while allowing users to connect and contact vendors to make purchases. The platform ensures secure authentication with OAuth2 and integrates PostgreSQL for robust data management.",
@@ -21,7 +56,7 @@ const Projects = () => {
       githubUrl: "https://github.com/willy-wonka28/eniola-store",
     },
     {
-      id: 2,
+      id: 5,
       title: "Habitual",
       description:
         "A productivity web app with a structured API for precise habit tracking, goal setting, and team collaboration. It allows users to create and monitor daily habits, set long-term goals, and collaborate efficiently within teams.",
@@ -32,7 +67,7 @@ const Projects = () => {
       githubUrl: "https://github.com/willy-wonka28/habitual",
     },
     {
-      id: 3,
+      id: 6,
       title: "Telegram Bot",
       description:
         "A powerful Telegram bot for managing CopperX cryptocurrency transactions, wallet operations, and user authentication. This bot enables seamless cryptocurrency transfers and wallet management through a convenient Telegram interface.",
@@ -42,8 +77,9 @@ const Projects = () => {
       githubUrl: "#",
       liveUrl: "https://t.me/buildminds_copperx_payout_bot",
     },
+   
     {
-      id: 4,
+      id: 7,
       title: "SmooveAI",
       description:
         "An innovative AI-driven platform that focuses on teaching programming concepts through interactive conversations. SmooveAI enhances the learning experience by breaking down complex coding topics and making them easier to understand.",
@@ -54,7 +90,7 @@ const Projects = () => {
       liveUrl: "#",
     },
     {
-      id: 5,
+      id: 8,
       title: "VAAV",
       description:
         "A commercial website for finding, renting, or purchasing plug-and-play batteries (PowerCube) that are clean and affordable. The platform offers a seamless and efficient way to access renewable energy solutions.",
@@ -64,7 +100,7 @@ const Projects = () => {
       liveUrl: "https://vaav-n.vercel.app/",
     },
     {
-      id: 6,
+      id: 9,
       title: "Venduit",
       description:
         "A platform designed to showcase and invest in various business and financial opportunities, providing users with insights and investment options across multiple industries.",
@@ -74,7 +110,7 @@ const Projects = () => {
       liveUrl: "https://venduit.vercel.app/",
     },
     {
-      id: 7,
+      id: 10,
       title: "OKM Treats",
       description:
         "A delightful, user-friendly online bakery experience, featuring easy product browsing, seamless checkout, and a unique menu centered around the ever-popular banana bread. Perfect for customers to place orders with a smooth shopping journey.",
@@ -84,7 +120,7 @@ const Projects = () => {
       liveUrl: "#",
     },
     {
-      id: 8,
+      id: 11,
       title: "News Website",
       description:
         "A clean, modern news platform designed to deliver the latest stories with a seamless user experience. Features an intuitive layout, smooth navigation, and dynamic content presentation—perfect for keeping users engaged.",
@@ -94,7 +130,7 @@ const Projects = () => {
       liveUrl: "#",
     },
     {
-      id: 9,
+      id: 12,
       title: "Helio Power",
       description:
         "A sleek, professional portfolio showcasing a solar energy business with eco-friendly products. The website highlights Helio Power's mission, offerings, and commitment to sustainability with an engaging user interface.",
@@ -104,7 +140,7 @@ const Projects = () => {
       liveUrl: "#",
     },
     {
-      id: 10,
+      id: 13,
       title: "Anon",
       description:
         "Anon provides a simple interface for creating groups and having discussions.",
@@ -114,39 +150,16 @@ const Projects = () => {
       liveUrl: "https://anon-posts.vercel.app/",
     },
     {
-      id: 11,
-      title: "9jamarket",
-      description:
-        "A revolutionary digital trade platform connecting traditional markets, vendors, and consumers across Nigeria. The platform bridges the gap between local markets and digital commerce, enabling vendors to showcase their products online while providing customers with real-time inventory, price comparisons, and secure payment options. Features include geo-location services for nearby markets, multi-language support for local dialects, integrated logistics for delivery coordination, and a robust vendor verification system to ensure authentic Nigerian products reach customers nationwide.",
-      image: "/src/assets/projects/9jamarket.png",
-      technologies: ["React", "Node.js", "MongoDB", "Express", "Socket.io", "Paystack"],
-      category: "web",
-      featured: true,
-      liveUrl: "https://9jamarket.com",
-      githubUrl: "https://github.com/prospercoded/9jamarket-Frontend",
-    },
-    {
-      id: 12,
-      title: "UniNav",
-      description:
-        "A collaborative university study materials platform that revolutionizes how students access and share academic resources. UniNav allows students to upload, organize, and discover essential course-related materials structured by faculty and department. The platform features advanced search functionality, peer review systems, version control for study materials, discussion forums for each resource, and analytics to track the most helpful content. With seamless integration across different file formats, automated categorization, and a robust rating system, UniNav enhances academic collaboration and builds a comprehensive knowledge base that grows with each student contribution.",
-      image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570",
-      technologies: ["React", "Node.js", "PostgreSQL", "Express", "Socket.io", "Elasticsearch", "NestJS"],
-      category: "web",
-      featured: true,
-      liveUrl: "https://uninav.live",
-      githubUrl: "https://github.com/prospercoded/uninav",
-    },
-    {
-      id: 13,
+      id: 14,
       title: "Perfect Arts",
       description:
         "A black-and-white themed portfolio website for a renowned hyperrealism artist. With an improved SEO strategy, this website ranks no. 1 on the Google search engine for relevant search terms.",
       image: "src/assets/projects/perfect.png",
       technologies: ["Vanilla JS", "HTML", "CSS", "SEO"],
       category: "web",
-      liveUrl: "perfect-arts.vercel.app",
+      liveUrl: "https://perfect-arts.vercel.app/",
     },
+   
   ];
 
   const categories = [
