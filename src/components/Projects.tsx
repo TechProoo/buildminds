@@ -163,13 +163,13 @@ const Projects = () => {
       id: 14,
       title: "Eniola Store",
       description:
-        "A black-and-white themed portfolio website for a renowned hyperrealism artist. With an improved SEO strategy, this website ranks no. 1 on the Google search engine for relevant search terms.",
+        "An e-commerce platform enabling market vendors to showcase products while allowing users to connect and contact vendors to make purchases. The platform ensures secure authentication with OAuth2 and integrates PostgreSQL for robust data management.",
       image: eniolaStoreImg,
-      technologies: ["Vanilla JS", "HTML", "CSS", "SEO"],
+      technologies: ["Next.js", "PostgreSQL", "OAuth2", "React"],
       category: "web",
       featured: true,
       liveUrl: "https://eniola-store2.vercel.app",
-      githubUrl: "https://github.com/willy-wonka28/eniola-store",
+      githubUrl: "https://github.com/ProsperCoded/Habitual-Backend",
     },
   ];
 

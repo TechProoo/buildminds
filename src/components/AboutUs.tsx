@@ -43,7 +43,7 @@ const AboutUs = () => {
     {
       name: "Chisom Hermes Chigoziri",
       role: "Fullstack Developer",
-      bio: "Expertise: Responsive Web Design, Accessibility, SEO, Software Architecture",
+      bio: "Expertise: Fullstack Development, API Integration, Responsive Web Design, Accessibility, SEO, Software Architecture",
       image: chisomImg,
       links: {
         github: "https://github.com/TruePadawan",
