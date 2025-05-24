@@ -207,8 +207,7 @@
     overflow: hidden;
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4),
-      0 0 0 1px rgba(255, 255, 255, 0.05) inset,
-      0 0 10px rgba(33, 150, 243, 0.2) inset;
+      0 0 0 1px rgba(255, 255, 255, 0.05) inset;
   }
 
   .glass-card::after {

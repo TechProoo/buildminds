@@ -58,20 +58,20 @@ const Projects = () => {
       title: "VAAV",
       description:
         "A commercial website for finding, renting, or purchasing plug-and-play batteries (PowerCube) that are clean and affordable. The platform offers a seamless and efficient way to access renewable energy solutions.",
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+      image: "src/assets/projects/vaav.png",
       technologies: ["React", "Tailwind CSS", "Vercel", "JavaScript"],
       category: "web",
-      liveUrl: "#",
+      liveUrl: "https://vaav-n.vercel.app/",
     },
     {
       id: 6,
       title: "Venduit",
       description:
         "A platform designed to showcase and invest in various business and financial opportunities, providing users with insights and investment options across multiple industries.",
-      image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81",
+      image: "/src/assets/projects/venduit.png",
       technologies: ["Next.js", "TypeScript", "Vercel", "React"],
       category: "web",
-      liveUrl: "#",
+      liveUrl: "https://venduit.vercel.app/",
     },
     {
       id: 7,
@@ -142,10 +142,10 @@ const Projects = () => {
       title: "Perfect Arts",
       description:
         "A black-and-white themed portfolio website for a renowned hyperrealism artist. With an improved SEO strategy, this website ranks no. 1 on the Google search engine for relevant search terms.",
-      image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81",
+      image: "src/assets/projects/perfect.png",
       technologies: ["Vanilla JS", "HTML", "CSS", "SEO"],
       category: "web",
-      liveUrl: "#",
+      liveUrl: "perfect-arts.vercel.app",
     },
   ];
 
