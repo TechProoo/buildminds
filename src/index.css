@@ -159,7 +159,7 @@
   }
 
   /* Artistic border styling */
-  .artistic-border {
+  /* .artistic-border {
     position: relative;
     overflow: hidden;
     border-radius: 0;
@@ -182,8 +182,8 @@
     );
     box-shadow: 0 0 15px 1px hsl(var(--border-glow) / 60%);
     animation: border-pulse 4s infinite alternate;
-  }
-
+  } */
+/* 
   .artistic-border::after {
     content: "";
     position: absolute;
@@ -199,7 +199,7 @@
     );
     box-shadow: 0 0 15px 1px hsl(var(--border-glow) / 60%);
     animation: border-pulse 4s infinite alternate-reverse;
-  }
+  } */
 
   .glass-card {
     @apply glass;
