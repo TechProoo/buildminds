@@ -1,4 +1,3 @@
-
 import TeamMember from "./TeamMember";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -6,46 +5,48 @@ import { Button } from "@/components/ui/button";
 const AboutUs = () => {
   const teamMembers = [
     {
-      name: "Alex Johnson",
-      role: "Full Stack Developer",
-      bio: "Passionate about building scalable web applications with modern technologies and best practices.",
-      image: "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3",
+      name: "Prosper Enwem",
+      role: "Fullstack & Backend Engineer",
+      bio: "Expertise: API Development, Database Design, Real-time Systems, Payment Integrations, Software Architecture, Deployment Strategies",
+      image: "/src/assets/team/prospercoded.png",
       links: {
-        github: "https://github.com",
-        linkedin: "https://linkedin.com",
-        email: "alex@buildminds.example",
+        github: "https://github.com/prospercoded",
+        linkedin: "https://linkedin.com/in/prosper-enwem",
+        email: "enweremproper@gmail.com",
       },
     },
     {
-      name: "Mia Chen",
-      role: "UI/UX Designer",
-      bio: "Creating user-centered designs that blend aesthetics with functionality for exceptional user experiences.",
-      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1622&auto=format&fit=crop&ixlib=rb-4.0.3",
+      name: "Oyetibo Olaoluwa Emmanuel",
+      role: "UI/UX Designer & Fullstack Developer",
+      bio: "Expertise: UI/UX Research, Responsive Web Design, Frontend Development, Accessibility",
+      image: "/src/assets/team/techpro.png",
       links: {
-        github: "https://github.com",
-        linkedin: "https://linkedin.com",
+        github: "https://github.com/Techprooo",
+        linkedin: "https://linkedin.com/in/oyetibo-olaoluwa",
       },
     },
     {
-      name: "Jamal Wilson",
-      role: "AI/ML Engineer",
-      bio: "Developing intelligent systems that leverage machine learning to solve complex problems.",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3",
+      name: "Adole David Enencheje",
+      role: "Project Manager & Fullstack Development",
+      bio: "Expertise: Project Planning & Tracking, Agile Project Management, Basic Fullstack Development",
+      image: "/src/assets/team/willy-wonka.png",
       links: {
-        github: "https://github.com",
-        email: "jamal@buildminds.example",
+        github: "https://github.com/willy-wonka28",
+        linkedin: "https://linkedin.com/in/adole-david",
+        email: "david@buildminds.dev",
       },
     },
     {
-      name: "Sophia Rodriguez",
-      role: "Blockchain Developer",
-      bio: "Exploring distributed ledger technologies to build secure and transparent applications.",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1588&auto=format&fit=crop&ixlib=rb-4.0.3",
+      name: "Chisom Hermes Chigoziri",
+      role: "UI/UX Designer/Researcher & Frontend Developer",
+      bio: "Expertise: UI/UX Research, Responsive Web Design, Frontend Development, Accessibility",
+      image: "/src/assets/team/chisom.png",
       links: {
-        linkedin: "https://linkedin.com",
-        email: "sophia@buildminds.example",
+        github: "https://github.com/TruePadawan",
+        linkedin: "https://www.linkedin.com/in/hermeschi",
+        email: "chisomhermes@gmail.com",
       },
-    },
+    }
   ];
 
   return (
@@ -82,8 +83,8 @@ const AboutUs = () => {
           </div>
         </div>
 
-        <h3 className="text-2xl font-bold mb-8 text-center">Meet Our Team</h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <h3 className="text-2xl font-bold mb-8 text-center">Meet The Team</h3>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
           {teamMembers.map((member, index) => (
             <TeamMember
               key={index}
