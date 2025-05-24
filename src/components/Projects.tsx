@@ -45,18 +45,6 @@ const Projects = () => {
     },
     {
       id: 4,
-      title: "Eniola Store",
-      description:
-        "An e-commerce platform enabling market vendors to showcase products while allowing users to connect and contact vendors to make purchases. The platform ensures secure authentication with OAuth2 and integrates PostgreSQL for robust data management.",
-      image: "/src/assets/projects/eniola-store.png",
-      technologies: ["Next.js", "PostgreSQL", "OAuth2", "React"],
-      category: "web",
-      featured: true,
-      liveUrl: "https://eniola-store2.vercel.app",
-      githubUrl: "https://github.com/willy-wonka28/eniola-store",
-    },
-    {
-      id: 5,
       title: "Habitual",
       description:
         "A productivity web app with a structured API for precise habit tracking, goal setting, and team collaboration. It allows users to create and monitor daily habits, set long-term goals, and collaborate efficiently within teams.",
@@ -67,7 +55,7 @@ const Projects = () => {
       githubUrl: "https://github.com/willy-wonka28/habitual",
     },
     {
-      id: 6,
+      id: 5,
       title: "Telegram Bot",
       description:
         "A powerful Telegram bot for managing CopperX cryptocurrency transactions, wallet operations, and user authentication. This bot enables seamless cryptocurrency transfers and wallet management through a convenient Telegram interface.",
@@ -77,9 +65,8 @@ const Projects = () => {
       githubUrl: "https://github.com/prospercoded/copperx-bot",
       liveUrl: "https://t.me/buildminds_copperx_payout_bot",
     },
-   
     {
-      id: 7,
+      id: 6,
       title: "SmooveAI",
       description:
         "An innovative AI-driven platform that focuses on teaching programming concepts through interactive conversations. SmooveAI enhances the learning experience by breaking down complex coding topics and making them easier to understand.",
@@ -90,7 +77,7 @@ const Projects = () => {
       liveUrl: "https://smoove-ai.netlify.app/",
     },
     {
-      id: 8,
+      id: 7,
       title: "VAAV",
       description:
         "A commercial website for finding, renting, or purchasing plug-and-play batteries (PowerCube) that are clean and affordable. The platform offers a seamless and efficient way to access renewable energy solutions.",
@@ -100,7 +87,7 @@ const Projects = () => {
       liveUrl: "#",
     },
     {
-      id: 9,
+      id: 8,
       title: "Venduit",
       description:
         "A platform designed to showcase and invest in various business and financial opportunities, providing users with insights and investment options across multiple industries.",
@@ -110,7 +97,7 @@ const Projects = () => {
       liveUrl: "#",
     },
     {
-      id: 10,
+      id: 9,
       title: "OKM Treats",
       description:
         "A delightful, user-friendly online bakery experience, featuring easy product browsing, seamless checkout, and a unique menu centered around the ever-popular banana bread. Perfect for customers to place orders with a smooth shopping journey.",
@@ -120,7 +107,7 @@ const Projects = () => {
       liveUrl: "https://okm-treats.netlify.app/",
     },
     {
-      id: 11,
+      id: 10,
       title: "Classy Crumble",
       description:
         "A clean, modern news platform designed to deliver the latest stories with a seamless user experience. Features an intuitive layout, smooth navigation, and dynamic content presentation—perfect for keeping users engaged.",
@@ -130,7 +117,7 @@ const Projects = () => {
       liveUrl: "https://classy-crumble-f764b0.netlify.app/",
     },
     {
-      id: 12,
+      id: 11,
       title: "Perfect Arts",
       description:
         "A black-and-white themed portfolio website for a renowned hyperrealism artist. With an improved SEO strategy, this website ranks no. 1 on the Google search engine for relevant search terms.",
@@ -140,7 +127,7 @@ const Projects = () => {
       liveUrl: "https://perfect-arts.vercel.app/",
     },
     {
-      id: 14,
+      id: 12,
       title: "Helio Power",
       description:
         "A sleek, professional portfolio showcasing a solar energy business with eco-friendly products. The website highlights Helio Power's mission, offerings, and commitment to sustainability with an engaging user interface.",
@@ -159,7 +146,18 @@ const Projects = () => {
       category: "web",
       liveUrl: "https://anon-posts.vercel.app/",
     },
-   
+    {
+      id: 14,
+      title: "Eniola Store",
+      description:
+        "An e-commerce platform enabling market vendors to showcase products while allowing users to connect and contact vendors to make purchases. The platform ensures secure authentication with OAuth2 and integrates PostgreSQL for robust data management.",
+      image: "/src/assets/projects/eniola-store.png",
+      technologies: ["Next.js", "PostgreSQL", "OAuth2", "React"],
+      category: "web",
+      featured: true,
+      liveUrl: "https://eniola-store2.vercel.app",
+      githubUrl: "https://github.com/willy-wonka28/eniola-store",
+    },
   ];
 
   const categories = [

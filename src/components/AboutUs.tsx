@@ -1,6 +1,10 @@
 import TeamMember from "./TeamMember";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import prospercodedImg from "@/assets/team/prospercoded.png";
+import techproImg from "@/assets/team/techpro.png";
+import willyWonkaImg from "@/assets/team/willy-wonka.png";
+import chisomImg from "@/assets/team/chisom.jpeg";
 
 const AboutUs = () => {
   const teamMembers = [
@@ -8,7 +12,7 @@ const AboutUs = () => {
       name: "Prosper Enwerem Tochukwu",
       role: "Backend Engineer & Software Architect",
       bio: "Expertise: Fullstack Development, System Design, API Development, Database Design, Real-time Systems, Payment Integrations, Software Architecture,",
-      image: "/src/assets/team/prospercoded.png",
+      image: prospercodedImg,
       links: {
         github: "https://github.com/prospercoded",
         linkedin: "https://linkedin.com/in/prospercoded",
@@ -19,7 +23,7 @@ const AboutUs = () => {
       name: "Oyetibo Olaoluwa Emmanuel",
       role: "AI Engineer & Full Stack Developer",
       bio: "Expertise: AI/ML Development, Full Stack Development, API Integration",
-      image: "/src/assets/team/techpro.png",
+      image: techproImg,
       links: {
         github: "https://github.com/Techprooo",
         linkedin: "https://linkedin.com/in/oyetibo-olaoluwa",
@@ -29,7 +33,7 @@ const AboutUs = () => {
       name: "Adole David Enencheje",
       role: "Project Manager & Fullstack Development",
       bio: "Expertise: Project Planning & Tracking, Agile Project Management, Basic Fullstack Development",
-      image: "/src/assets/team/willy-wonka.png",
+      image: willyWonkaImg,
       links: {
         github: "https://github.com/willy-wonka28",
         linkedin: "https://www.linkedin.com/in/david-adole-887057304/",
@@ -40,7 +44,7 @@ const AboutUs = () => {
       name: "Chisom Hermes Chigoziri",
       role: "Fullstack Developer",
       bio: "Expertise: Responsive Web Design, Accessibility, SEO, Software Architecture",
-      image: "/src/assets/team/chisom.jpeg",
+      image: chisomImg,
       links: {
         github: "https://github.com/TruePadawan",
         linkedin: "https://www.linkedin.com/in/hermeschi",
