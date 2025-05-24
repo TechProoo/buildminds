@@ -4,12 +4,17 @@ import { ArrowRight } from "lucide-react";
 const Hero = () => {
   const codeSnippet = `
 function BuildMinds() {
-  const vision = "Building the future";
-  const devs = ["innovative", "young", "talented"];
+  const mission = "Transforming ideas into reality";
+  const expertise = ["cutting-edge", "scalable", "performance-driven"];
+  const solutions = ["web technologies", "digital experiences"];
   
-  return devs.map(dev => 
-    \`\${dev} minds \${vision.toLowerCase()}\`
-  );
+  return {
+    vision: "Elite builders crafting the future",
+    approach: expertise.map(skill => 
+      \`\${skill} solutions that enhance lives\`
+    ),
+    focus: solutions
+  };
 }`;
 
   return (
@@ -35,16 +40,17 @@ function BuildMinds() {
           <div className="flex-1 space-y-6 text-center lg:text-left">
             <h1 className="animate-fade-in text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight vintage-text-shadow">
               <span className="text-gradient animate-glow">Build Minds.</span>{" "}
-              Young Devs
+              Elite Builders
               <br />
               <span className="terminal-text scan-line">
                 Building The Future
               </span>
             </h1>
             <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto lg:mx-0 animate-flicker">
-              A collective of visionary developers crafting impactful digital
-              solutions. We turn ideas into reality through code, collaboration,
-              and creativity.
+              We are an elite team of visionary builders dedicated to transforming ideas into elegant, 
+              high-impact solutions that enhance efficiency and improve lives. We craft immersive digital 
+              experiences that merge innovation with functionality, delivering seamless, scalable, and 
+              performance-driven solutions through cutting-edge web technologies.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button
