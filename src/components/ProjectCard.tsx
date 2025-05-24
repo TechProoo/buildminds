@@ -1,4 +1,3 @@
-
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Github, ExternalLink } from "lucide-react";
@@ -41,6 +40,7 @@ const ProjectCard = ({
           <img
             src={image}
             alt={title}
+            loading="lazy"
             className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110 opacity-80"
             style={{filter: "contrast(1.1) brightness(0.9)"}}
           />
@@ -53,12 +53,27 @@ const ProjectCard = ({
         <div className="flex-1 p-6 scan-line">
           <div className="flex flex-wrap gap-2 mb-3">
             {technologies.slice(0, 4).map((tech) => (
-              <Badge key={tech} variant="secondary" className="bg-secondary/20 text-secondary-foreground border border-secondary/30">
+              <Badge 
+                key={tech} 
+                variant="secondary" 
+                className={cn(
+                  "bg-secondary/20 text-white border border-secondary/30",
+                  "transition-all duration-300",
+                  isHovered && "shadow-[0_0_10px_rgba(56,189,248,0.3)]"
+                )}
+              >
                 {tech}
               </Badge>
             ))}
             {technologies.length > 4 && (
-              <Badge variant="secondary" className="bg-secondary/20 text-secondary-foreground border border-secondary/30">
+              <Badge 
+                variant="secondary" 
+                className={cn(
+                  "bg-secondary/20 text-white border border-secondary/30",
+                  "transition-all duration-300",
+                  isHovered && "shadow-[0_0_10px_rgba(56,189,248,0.3)]"
+                )}
+              >
                 +{technologies.length - 4}
               </Badge>
             )}
