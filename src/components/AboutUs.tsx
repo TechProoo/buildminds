@@ -6,8 +6,8 @@ const AboutUs = () => {
   const teamMembers = [
     {
       name: "Prosper Enwerem Tochukwu",
-      role: "Fullstack & Backend Engineer",
-      bio: "Expertise: API Development, Database Design, Real-time Systems, Payment Integrations, Software Architecture, Deployment Strategies",
+      role: "Backend Engineer & Software Architect",
+      bio: "Expertise: Fullstack Development, System Design, API Development, Database Design, Real-time Systems, Payment Integrations, Software Architecture,",
       image: "/src/assets/team/prospercoded.png",
       links: {
         github: "https://github.com/prospercoded",
@@ -17,8 +17,8 @@ const AboutUs = () => {
     },
     {
       name: "Oyetibo Olaoluwa Emmanuel",
-      role: "UI/UX Designer & Fullstack Developer",
-      bio: "Expertise: UI/UX Research, Responsive Web Design, Frontend Development, Accessibility",
+      role: "AI Engineer & Full Stack Developer",
+      bio: "Expertise: AI/ML Development, Full Stack Development, API Integration",
       image: "/src/assets/team/techpro.png",
       links: {
         github: "https://github.com/Techprooo",
@@ -38,9 +38,9 @@ const AboutUs = () => {
     },
     {
       name: "Chisom Hermes Chigoziri",
-      role: "UI/UX Designer/Researcher & Frontend Developer",
-      bio: "Expertise: Responsive Web Design, Frontend Development, Accessibility",
-      image: "/src/assets/team/chisom.png",
+      role: "Fullstack Developer",
+      bio: "Expertise: Responsive Web Design, Accessibility, SEO, Software Architecture",
+      image: "/src/assets/team/chisom.jpeg",
       links: {
         github: "https://github.com/TruePadawan",
         linkedin: "https://www.linkedin.com/in/hermeschi",
