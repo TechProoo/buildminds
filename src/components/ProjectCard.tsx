@@ -31,7 +31,7 @@ const ProjectCard = ({
       className={cn(
         "group relative overflow-hidden transition-all duration-500 crt-effect", 
         featured ? "lg:col-span-2" : "",
-        "hover:shadow-[0_0_15px_rgba(139,92,246,0.5)]"
+        "hover:shadow-[0_0_15px_rgba(56,189,248,0.5)]"
       )}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -45,7 +45,7 @@ const ProjectCard = ({
             style={{filter: "contrast(1.1) brightness(0.9)"}}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-70"></div>
-          <div className="absolute top-2 right-2 px-2 py-1 bg-black/50 backdrop-blur-sm text-xs text-green-400 font-mono">
+          <div className="absolute top-2 right-2 px-2 py-1 bg-black/50 backdrop-blur-sm text-xs text-cyan-400 font-mono">
             {technologies[0]} / {technologies.length > 1 ? technologies[1] : ""}
           </div>
         </div>
