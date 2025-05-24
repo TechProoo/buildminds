@@ -65,7 +65,7 @@ const Contact = () => {
             <h3 className="text-xl font-bold mb-6">Connect With Us</h3>
             
             <div className="space-y-6">
-              <div>
+              {/* <div>
                 <h4 className="text-lg font-medium mb-2">Our Social Channels</h4>
                 <div className="flex gap-4">
                   <a 
@@ -91,17 +91,17 @@ const Contact = () => {
                     <Mail className="h-5 w-5" />
                   </a>
                 </div>
-              </div>
+              </div> */}
               
               <div>
                 <h4 className="text-lg font-medium mb-2">Email Us</h4>
-                <p className="text-gray-400">hello@buildminds.example</p>
+                <p className="text-gray-400">direct.buildminds@gmail.com</p>
               </div>
               
-              <div>
+              {/* <div>
                 <h4 className="text-lg font-medium mb-2">Visit Us</h4>
                 <p className="text-gray-400">123 Innovation Street<br />Tech City, TC 10011</p>
-              </div>
+              </div> */}
             </div>
           </div>
 

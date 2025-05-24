@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 const AboutUs = () => {
   const teamMembers = [
     {
-      name: "Prosper Enwem",
+      name: "Prosper Enwerem Tochukwu",
       role: "Fullstack & Backend Engineer",
       bio: "Expertise: API Development, Database Design, Real-time Systems, Payment Integrations, Software Architecture, Deployment Strategies",
       image: "/src/assets/team/prospercoded.png",
@@ -32,8 +32,8 @@ const AboutUs = () => {
       image: "/src/assets/team/willy-wonka.png",
       links: {
         github: "https://github.com/willy-wonka28",
-        linkedin: "https://linkedin.com/in/adole-david",
-        email: "david@buildminds.dev",
+        linkedin: "https://www.linkedin.com/in/david-adole-887057304/",
+        email: "adoledavid345@gmail.com",
       },
     },
     {
