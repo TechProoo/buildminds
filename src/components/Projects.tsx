@@ -116,11 +116,8 @@ const Projects = () => {
   const categories = [
     { id: "all", label: "All Projects" },
     { id: "web", label: "Web" },
-    { id: "mobile", label: "Mobile" },
     { id: "ai", label: "AI" },
     { id: "blockchain", label: "Blockchain" },
-    { id: "iot", label: "IoT" },
-    { id: "ar", label: "AR/VR" },
   ];
 
   const filteredProjects =
