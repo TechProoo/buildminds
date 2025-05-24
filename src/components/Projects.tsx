@@ -81,20 +81,20 @@ const Projects = () => {
       title: "VAAV",
       description:
         "A commercial website for finding, renting, or purchasing plug-and-play batteries (PowerCube) that are clean and affordable. The platform offers a seamless and efficient way to access renewable energy solutions.",
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+      image: "src/assets/projects/vaav.png",
       technologies: ["React", "Tailwind CSS", "Vercel", "JavaScript"],
       category: "web",
-      liveUrl: "#",
+      liveUrl: "https://vaav-n.vercel.app/",
     },
     {
       id: 8,
       title: "Venduit",
       description:
         "A platform designed to showcase and invest in various business and financial opportunities, providing users with insights and investment options across multiple industries.",
-      image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81",
+      image: "/src/assets/projects/venduit.png",
       technologies: ["Next.js", "TypeScript", "Vercel", "React"],
       category: "web",
-      liveUrl: "#",
+      liveUrl: "https://venduit.vercel.app/",
     },
     {
       id: 9,
@@ -150,9 +150,9 @@ const Projects = () => {
       id: 14,
       title: "Eniola Store",
       description:
-        "An e-commerce platform enabling market vendors to showcase products while allowing users to connect and contact vendors to make purchases. The platform ensures secure authentication with OAuth2 and integrates PostgreSQL for robust data management.",
-      image: "/src/assets/projects/eniola-store.png",
-      technologies: ["Next.js", "PostgreSQL", "OAuth2", "React"],
+        "A black-and-white themed portfolio website for a renowned hyperrealism artist. With an improved SEO strategy, this website ranks no. 1 on the Google search engine for relevant search terms.",
+      image: "src/assets/projects/perfect.png",
+      technologies: ["Vanilla JS", "HTML", "CSS", "SEO"],
       category: "web",
       featured: true,
       liveUrl: "https://eniola-store2.vercel.app",

@@ -17,7 +17,7 @@ const TechStack = () => {
     { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg", category: "frontend", description: "Building dynamic user interfaces with component-based architecture" },
     { name: "TypeScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg", category: "frontend", description: "Adding type safety to our JavaScript codebases" },
     { name: "Next.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg", category: "frontend", description: "Creating optimized React applications with server-side rendering" },
-    { name: "Tailwind CSS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg", category: "frontend", description: "Utility-first CSS framework for rapid UI development" },
+    { name: "Tailwind CSS", icon: "https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/tailwindcss/tailwindcss-original.svg", category: "frontend", description: "Utility-first CSS framework for rapid UI development" },
     { name: "Framer Motion", icon: "https://seeklogo.com/images/F/framer-motion-logo-DA1E33CAA1-seeklogo.com.png", category: "frontend", description: "Creating fluid animations and interactions" },
     
     // Backend
@@ -37,7 +37,7 @@ const TechStack = () => {
     { name: "Docker", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg", category: "devops", description: "Containerization for consistent development and deployment" },
     { name: "Kubernetes", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg", category: "devops", description: "Container orchestration for scalable applications" },
     { name: "GitHub Actions", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg", category: "devops", description: "CI/CD automation directly in GitHub repositories" },
-    { name: "AWS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg", category: "devops", description: "Comprehensive cloud platform for all applications" },
+    { name: "AWS", icon: "https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/amazonwebservices/amazonwebservices-original-wordmark.svg", category: "devops", description: "Comprehensive cloud platform for all applications" },
   ];
 
   const categories = [
@@ -80,7 +80,7 @@ const TechStack = () => {
         </div>
 
         {/* Tech Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 justify-center">
           {filteredTech.map((tech, index) => (
             <div 
               key={tech.name}
