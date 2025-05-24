@@ -38,8 +38,17 @@ const Navbar = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           <div className="flex-shrink-0">
-            <a href="#home" className="text-xl font-bold text-gradient">
-              BUILD MINDS
+            <a href="#home" className="group relative inline-block">
+              <div className="relative">
+                <span className="text-2xl font-black tracking-wider text-gradient vintage-text-shadow animate-glow">
+                  BUILD
+                </span>
+                <span className="mx-2 text-xl text-cyan-400/60 font-light">·</span>
+                <span className="text-2xl font-black tracking-wider text-gradient vintage-text-shadow animate-glow">
+                  MINDS
+                </span>
+                <div className="absolute -bottom-1 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary to-transparent opacity-60 group-hover:opacity-100 transition-opacity"></div>
+              </div>
             </a>
           </div>
           
