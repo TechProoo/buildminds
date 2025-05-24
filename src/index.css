@@ -1,7 +1,40 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.animate-slide-up {
+  animation: slide-up 0.5s ease-out forwards;
+}
+
+.animation-delay-100 {
+  animation-delay: 100ms;
+}
+.animation-delay-200 {
+  animation-delay: 200ms;
+}
+.animation-delay-300 {
+  animation-delay: 300ms;
+}
+.animation-delay-400 {
+  animation-delay: 400ms;
+}
+.animation-delay-500 {
+  animation-delay: 500ms;
+}
+.animation-delay-600 {
+  animation-delay: 600ms;
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 
 @layer base {
   :root {
@@ -59,49 +92,128 @@
     @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
     background: 
-      /* Animated stars */
-      radial-gradient(1px 1px at 20px 30px, #fff, transparent),
-      radial-gradient(1px 1px at 40px 70px, rgba(255,255,255,0.8), transparent),
-      radial-gradient(1px 1px at 90px 40px, rgba(33, 150, 243, 0.9), transparent),
-      radial-gradient(1px 1px at 130px 80px, rgba(255,255,255,0.6), transparent),
-      radial-gradient(1px 1px at 160px 30px, rgba(30, 136, 229, 0.8), transparent),
-      radial-gradient(2px 2px at 180px 60px, rgba(255,255,255,0.4), transparent),
-      radial-gradient(1px 1px at 220px 90px, rgba(33, 150, 243, 0.7), transparent),
+      /* Animated stars */ radial-gradient(
+        1px 1px at 20px 30px,
+        #fff,
+        transparent
+      ),
+      radial-gradient(
+        1px 1px at 40px 70px,
+        rgba(255, 255, 255, 0.8),
+        transparent
+      ),
+      radial-gradient(
+        1px 1px at 90px 40px,
+        rgba(33, 150, 243, 0.9),
+        transparent
+      ),
+      radial-gradient(
+        1px 1px at 130px 80px,
+        rgba(255, 255, 255, 0.6),
+        transparent
+      ),
+      radial-gradient(
+        1px 1px at 160px 30px,
+        rgba(30, 136, 229, 0.8),
+        transparent
+      ),
+      radial-gradient(
+        2px 2px at 180px 60px,
+        rgba(255, 255, 255, 0.4),
+        transparent
+      ),
+      radial-gradient(
+        1px 1px at 220px 90px,
+        rgba(33, 150, 243, 0.7),
+        transparent
+      ),
       radial-gradient(1px 1px at 250px 10px, #fff, transparent),
-      radial-gradient(1px 1px at 280px 50px, rgba(255,255,255,0.9), transparent),
-      radial-gradient(2px 2px at 320px 80px, rgba(30, 136, 229, 0.6), transparent),
+      radial-gradient(
+        1px 1px at 280px 50px,
+        rgba(255, 255, 255, 0.9),
+        transparent
+      ),
+      radial-gradient(
+        2px 2px at 320px 80px,
+        rgba(30, 136, 229, 0.6),
+        transparent
+      ),
       /* Cosmic background gradients */
-      radial-gradient(ellipse 800px 600px at 50% 0%, rgba(33, 150, 243, 0.15), transparent),
-      radial-gradient(ellipse 600px 400px at 80% 100%, rgba(30, 136, 229, 0.1), transparent),
-      radial-gradient(ellipse 400px 300px at 20% 50%, rgba(56, 189, 248, 0.08), transparent),
+        radial-gradient(
+          ellipse 800px 600px at 50% 0%,
+          rgba(33, 150, 243, 0.15),
+          transparent
+        ),
+      radial-gradient(
+        ellipse 600px 400px at 80% 100%,
+        rgba(30, 136, 229, 0.1),
+        transparent
+      ),
+      radial-gradient(
+        ellipse 400px 300px at 20% 50%,
+        rgba(56, 189, 248, 0.08),
+        transparent
+      ),
       /* Deep space background */
-      linear-gradient(180deg, #000511 0%, #001a2e 50%, #0a0f1a 100%);
-    background-size: 
+        linear-gradient(180deg, #000511 0%, #001a2e 50%, #0a0f1a 100%);
+    background-size: 350px 200px, 350px 200px, 350px 200px, 350px 200px,
       350px 200px, 350px 200px, 350px 200px, 350px 200px, 350px 200px,
-      350px 200px, 350px 200px, 350px 200px, 350px 200px, 350px 200px,
-      100% 100%, 100% 100%, 100% 100%, 100% 100%;
-    background-repeat: repeat, repeat, repeat, repeat, repeat, repeat, repeat, repeat, repeat, repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+      350px 200px, 100% 100%, 100% 100%, 100% 100%, 100% 100%;
+    background-repeat: repeat, repeat, repeat, repeat, repeat, repeat, repeat,
+      repeat, repeat, repeat, no-repeat, no-repeat, no-repeat, no-repeat;
     animation: stars-move 120s linear infinite;
   }
 
   body::before {
-    content: '';
+    content: "";
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background: 
-      /* More twinkling stars */
-      radial-gradient(1px 1px at 50px 100px, rgba(255,255,255,0.9), transparent),
-      radial-gradient(1px 1px at 100px 150px, rgba(33, 150, 243, 0.8), transparent),
-      radial-gradient(2px 2px at 150px 50px, rgba(255,255,255,0.7), transparent),
-      radial-gradient(1px 1px at 200px 120px, rgba(30, 136, 229, 0.9), transparent),
-      radial-gradient(1px 1px at 270px 170px, rgba(255,255,255,0.6), transparent),
-      radial-gradient(1px 1px at 300px 20px, rgba(33, 150, 243, 0.8), transparent),
-      radial-gradient(2px 2px at 350px 130px, rgba(255,255,255,0.5), transparent),
-      radial-gradient(1px 1px at 380px 70px, rgba(30, 136, 229, 0.7), transparent);
-    background-size: 400px 200px, 400px 200px, 400px 200px, 400px 200px, 400px 200px, 400px 200px, 400px 200px, 400px 200px;
+      /* More twinkling stars */ radial-gradient(
+        1px 1px at 50px 100px,
+        rgba(255, 255, 255, 0.9),
+        transparent
+      ),
+      radial-gradient(
+        1px 1px at 100px 150px,
+        rgba(33, 150, 243, 0.8),
+        transparent
+      ),
+      radial-gradient(
+        2px 2px at 150px 50px,
+        rgba(255, 255, 255, 0.7),
+        transparent
+      ),
+      radial-gradient(
+        1px 1px at 200px 120px,
+        rgba(30, 136, 229, 0.9),
+        transparent
+      ),
+      radial-gradient(
+        1px 1px at 270px 170px,
+        rgba(255, 255, 255, 0.6),
+        transparent
+      ),
+      radial-gradient(
+        1px 1px at 300px 20px,
+        rgba(33, 150, 243, 0.8),
+        transparent
+      ),
+      radial-gradient(
+        2px 2px at 350px 130px,
+        rgba(255, 255, 255, 0.5),
+        transparent
+      ),
+      radial-gradient(
+        1px 1px at 380px 70px,
+        rgba(30, 136, 229, 0.7),
+        transparent
+      );
+    background-size: 400px 200px, 400px 200px, 400px 200px, 400px 200px,
+      400px 200px, 400px 200px, 400px 200px, 400px 200px;
     background-repeat: repeat;
     pointer-events: none;
     z-index: -1;
@@ -109,18 +221,33 @@
   }
 
   body::after {
-    content: '';
+    content: "";
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background: 
-      /* Distant galaxies and nebulae */
-      radial-gradient(ellipse 200px 100px at 10% 20%, rgba(33, 150, 243, 0.03), transparent),
-      radial-gradient(ellipse 150px 80px at 90% 80%, rgba(30, 136, 229, 0.04), transparent),
-      radial-gradient(ellipse 300px 150px at 60% 40%, rgba(56, 189, 248, 0.02), transparent),
-      radial-gradient(ellipse 100px 50px at 30% 70%, rgba(33, 150, 243, 0.05), transparent);
+      /* Distant galaxies and nebulae */ radial-gradient(
+        ellipse 200px 100px at 10% 20%,
+        rgba(33, 150, 243, 0.03),
+        transparent
+      ),
+      radial-gradient(
+        ellipse 150px 80px at 90% 80%,
+        rgba(30, 136, 229, 0.04),
+        transparent
+      ),
+      radial-gradient(
+        ellipse 300px 150px at 60% 40%,
+        rgba(56, 189, 248, 0.02),
+        transparent
+      ),
+      radial-gradient(
+        ellipse 100px 50px at 30% 70%,
+        rgba(33, 150, 243, 0.05),
+        transparent
+      );
     pointer-events: none;
     z-index: -2;
     animation: nebula-drift 200s ease-in-out infinite alternate;
@@ -128,25 +255,26 @@
 
   .glass {
     @apply bg-black/50 backdrop-blur-md border border-white/10 rounded-lg shadow-xl;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4), inset 0 0 1px 1px rgba(33, 150, 243, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4),
+      inset 0 0 1px 1px rgba(33, 150, 243, 0.1);
   }
 
   .text-gradient {
     @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary;
     text-shadow: 0 0 10px rgba(33, 150, 243, 0.4);
   }
-  
+
   .terminal-text {
     @apply font-mono border-r-2 border-primary overflow-hidden whitespace-nowrap animate-typing;
     text-shadow: 0 0 5px hsl(var(--primary) / 50%);
   }
-  
+
   /* Vintage CRT screen effect */
   .crt-effect {
     position: relative;
     overflow: hidden;
   }
-  
+
   .crt-effect::before {
     content: " ";
     display: block;
@@ -155,12 +283,15 @@
     left: 0;
     bottom: 0;
     right: 0;
-    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.1) 50%);
+    background: linear-gradient(
+      rgba(18, 16, 16, 0) 50%,
+      rgba(0, 0, 0, 0.1) 50%
+    );
     background-size: 100% 4px;
     pointer-events: none;
     z-index: 10;
   }
-  
+
   .crt-effect::after {
     content: " ";
     display: block;
@@ -174,7 +305,7 @@
     z-index: 11;
     pointer-events: none;
   }
-  
+
   /* Artistic border styling */
   .artistic-border {
     position: relative;
@@ -183,7 +314,7 @@
     padding: 2px;
     background: rgba(0, 0, 0, 0.8);
   }
-  
+
   .artistic-border::before {
     content: "";
     position: absolute;
@@ -191,15 +322,16 @@
     left: 0;
     right: 0;
     height: 2px;
-    background: linear-gradient(to right, 
-      hsl(var(--border-accent)), 
-      hsl(var(--border-glow)), 
+    background: linear-gradient(
+      to right,
+      hsl(var(--border-accent)),
+      hsl(var(--border-glow)),
       hsl(var(--border-accent))
     );
     box-shadow: 0 0 15px 1px hsl(var(--border-glow) / 60%);
     animation: border-pulse 4s infinite alternate;
   }
-  
+
   .artistic-border::after {
     content: "";
     position: absolute;
@@ -207,26 +339,26 @@
     left: 0;
     right: 0;
     height: 2px;
-    background: linear-gradient(to right, 
-      hsl(var(--border-accent)), 
-      hsl(var(--border-glow)), 
+    background: linear-gradient(
+      to right,
+      hsl(var(--border-accent)),
+      hsl(var(--border-glow)),
       hsl(var(--border-accent))
     );
     box-shadow: 0 0 15px 1px hsl(var(--border-glow) / 60%);
     animation: border-pulse 4s infinite alternate-reverse;
   }
-  
+
   .glass-card {
     @apply glass;
     position: relative;
     overflow: hidden;
     border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 
-      0 4px 30px rgba(0, 0, 0, 0.4),
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4),
       0 0 0 1px rgba(255, 255, 255, 0.05) inset,
       0 0 10px rgba(33, 150, 243, 0.2) inset;
   }
-  
+
   .glass-card::after {
     content: "";
     position: absolute;
@@ -236,13 +368,14 @@
     bottom: 0;
     border: 1px solid transparent;
     border-image: linear-gradient(
-      45deg,
-      hsl(var(--primary) / 30%) 0%, 
-      hsl(var(--secondary) / 50%) 25%, 
-      transparent 50%,
-      hsl(var(--secondary) / 50%) 75%, 
-      hsl(var(--primary) / 30%) 100%
-    ) 1;
+        45deg,
+        hsl(var(--primary) / 30%) 0%,
+        hsl(var(--secondary) / 50%) 25%,
+        transparent 50%,
+        hsl(var(--secondary) / 50%) 75%,
+        hsl(var(--primary) / 30%) 100%
+      )
+      1;
     pointer-events: none;
     border-radius: inherit;
   }
@@ -252,7 +385,7 @@
     position: relative;
     overflow: hidden;
   }
-  
+
   .glass-button::after {
     content: "";
     position: absolute;
@@ -268,7 +401,7 @@
     transform: rotate(30deg);
     transition: transform 0.7s;
   }
-  
+
   .glass-button:hover::after {
     transform: rotate(30deg) translate(0, 50%);
   }
@@ -278,7 +411,7 @@
     position: relative;
     overflow: hidden;
   }
-  
+
   .scan-line::after {
     content: "";
     position: absolute;
@@ -290,27 +423,51 @@
     opacity: 0.7;
     animation: scan 2s linear infinite;
   }
-  
+
   @keyframes scan {
-    0% { transform: translateY(-100%); }
-    100% { transform: translateY(1000%); }
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(1000%);
+    }
   }
 
   /* Space-themed animations */
   @keyframes stars-move {
-    from { background-position: 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0; }
-    to { background-position: -350px 0, -350px 0, -350px 0, -350px 0, -350px 0, -350px 0, -350px 0, -350px 0, -350px 0, -350px 0, 0 0, 0 0, 0 0, 0 0; }
+    from {
+      background-position: 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0,
+        0 0;
+    }
+    to {
+      background-position: -350px 0, -350px 0, -350px 0, -350px 0, -350px 0,
+        -350px 0, -350px 0, -350px 0, -350px 0, -350px 0, 0 0, 0 0, 0 0, 0 0;
+    }
   }
 
   @keyframes stars-twinkle {
-    from { background-position: 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0; }
-    to { background-position: -400px 0, -400px 0, -400px 0, -400px 0, -400px 0, -400px 0, -400px 0, -400px 0; }
+    from {
+      background-position: 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0;
+    }
+    to {
+      background-position: -400px 0, -400px 0, -400px 0, -400px 0, -400px 0,
+        -400px 0, -400px 0;
+    }
   }
 
   @keyframes nebula-drift {
-    0% { opacity: 0.3; transform: translateX(0) rotate(0deg); }
-    50% { opacity: 0.6; transform: translateX(50px) rotate(180deg); }
-    100% { opacity: 0.3; transform: translateX(0) rotate(360deg); }
+    0% {
+      opacity: 0.3;
+      transform: translateX(0) rotate(0deg);
+    }
+    50% {
+      opacity: 0.6;
+      transform: translateX(50px) rotate(180deg);
+    }
+    100% {
+      opacity: 0.3;
+      transform: translateX(0) rotate(360deg);
+    }
   }
 
   .shooting-star {
@@ -319,7 +476,12 @@
     left: 0;
     width: 2px;
     height: 2px;
-    background: linear-gradient(45deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 1) 50%,
+      rgba(255, 255, 255, 0) 100%
+    );
     border-radius: 50%;
     animation: shooting 3s linear infinite;
     z-index: 1;
@@ -345,53 +507,120 @@
 
 @layer base {
   @keyframes border-pulse {
-    0% { opacity: 0.4; }
-    50% { opacity: 0.8; }
-    100% { opacity: 0.4; }
+    0% {
+      opacity: 0.4;
+    }
+    50% {
+      opacity: 0.8;
+    }
+    100% {
+      opacity: 0.4;
+    }
   }
-  
+
   @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
   }
-  
+
   @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: hsl(var(--primary)) }
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: hsl(var(--primary));
+    }
   }
-  
+
   @keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
   }
-  
+
   @keyframes glow {
-    0%, 100% { filter: drop-shadow(0 0 3px rgba(33, 150, 243, 0.4)); }
-    50% { filter: drop-shadow(0 0 8px rgba(33, 150, 243, 0.7)); }
+    0%,
+    100% {
+      filter: drop-shadow(0 0 3px rgba(33, 150, 243, 0.4));
+    }
+    50% {
+      filter: drop-shadow(0 0 8px rgba(33, 150, 243, 0.7));
+    }
   }
-  
+
   @keyframes flicker {
-    0% { opacity: 0.8; }
-    5% { opacity: 0.85; }
-    10% { opacity: 0.9; }
-    15% { opacity: 0.85; }
-    20% { opacity: 0.95; }
-    25% { opacity: 0.9; }
-    30% { opacity: 0.95; }
-    35% { opacity: 0.85; }
-    40% { opacity: 0.9; }
-    45% { opacity: 0.94; }
-    50% { opacity: 0.98; }
-    55% { opacity: 0.91; }
-    60% { opacity: 0.94; }
-    65% { opacity: 0.98; }
-    70% { opacity: 0.9; }
-    75% { opacity: 0.95; }
-    80% { opacity: 0.92; }
-    85% { opacity: 0.98; }
-    90% { opacity: 0.9; }
-    95% { opacity: 0.95; }
-    100% { opacity: 0.92; }
+    0% {
+      opacity: 0.8;
+    }
+    5% {
+      opacity: 0.85;
+    }
+    10% {
+      opacity: 0.9;
+    }
+    15% {
+      opacity: 0.85;
+    }
+    20% {
+      opacity: 0.95;
+    }
+    25% {
+      opacity: 0.9;
+    }
+    30% {
+      opacity: 0.95;
+    }
+    35% {
+      opacity: 0.85;
+    }
+    40% {
+      opacity: 0.9;
+    }
+    45% {
+      opacity: 0.94;
+    }
+    50% {
+      opacity: 0.98;
+    }
+    55% {
+      opacity: 0.91;
+    }
+    60% {
+      opacity: 0.94;
+    }
+    65% {
+      opacity: 0.98;
+    }
+    70% {
+      opacity: 0.9;
+    }
+    75% {
+      opacity: 0.95;
+    }
+    80% {
+      opacity: 0.92;
+    }
+    85% {
+      opacity: 0.98;
+    }
+    90% {
+      opacity: 0.9;
+    }
+    95% {
+      opacity: 0.95;
+    }
+    100% {
+      opacity: 0.92;
+    }
   }
 }
 
@@ -399,31 +628,65 @@
   .animate-glow {
     animation: glow 3s ease-in-out infinite;
   }
-  
+
   .animate-flicker {
     animation: flicker 4s linear infinite;
   }
-  
+
   .animate-stars {
     animation: stars-move 120s linear infinite;
   }
-  
+
   .animate-twinkle {
     animation: stars-twinkle 80s linear infinite;
   }
-  
-  .vintage-text-shadow {
-    text-shadow: 0 0 5px rgba(33, 150, 243, 0.5), 0 0 10px rgba(33, 150, 243, 0.3);
+
+  .animate-slide-up {
+    animation: slide-up 0.5s ease-out forwards;
   }
-  
+
+  .animation-delay-100 {
+    animation-delay: 100ms;
+  }
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+  .animation-delay-300 {
+    animation-delay: 300ms;
+  }
+  .animation-delay-400 {
+    animation-delay: 400ms;
+  }
+  .animation-delay-500 {
+    animation-delay: 500ms;
+  }
+  .animation-delay-600 {
+    animation-delay: 600ms;
+  }
+
+  .vintage-text-shadow {
+    text-shadow: 0 0 5px rgba(33, 150, 243, 0.5),
+      0 0 10px rgba(33, 150, 243, 0.3);
+  }
+
   .vintage-box-shadow {
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(33, 150, 243, 0.3) inset;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5),
+      0 0 0 1px rgba(33, 150, 243, 0.3) inset;
   }
 
   .space-glow {
-    box-shadow: 
-      0 0 20px rgba(33, 150, 243, 0.3),
-      0 0 40px rgba(33, 150, 243, 0.2),
-      0 0 60px rgba(33, 150, 243, 0.1);
+    box-shadow: 0 0 20px rgba(33, 150, 243, 0.3),
+      0 0 40px rgba(33, 150, 243, 0.2), 0 0 60px rgba(33, 150, 243, 0.1);
+  }
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
