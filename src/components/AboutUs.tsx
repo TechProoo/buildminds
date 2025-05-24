@@ -38,9 +38,9 @@ const AboutUs = () => {
     },
     {
       name: "Chisom Hermes Chigoziri",
-      role: "UI/UX Designer/Researcher & Frontend Developer",
+      role: "UI/UX Designer & Frontend Developer",
       bio: "Expertise: UI/UX Research, Responsive Web Design, Frontend Development, Accessibility",
-      image: "/src/assets/team/chisom.png",
+      image: "/src/assets/team/chisom.jpeg",
       links: {
         github: "https://github.com/TruePadawan",
         linkedin: "https://www.linkedin.com/in/hermeschi",

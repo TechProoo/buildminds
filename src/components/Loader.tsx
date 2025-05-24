@@ -50,7 +50,6 @@ const Loader = () => {
             key={i}
             className={cn(
               "text-4xl sm:text-5xl font-bold inline-block",
-              "animate-float",
               "bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary"
             )}
             style={{
