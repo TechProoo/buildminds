@@ -7,6 +7,7 @@ const Projects = () => {
   const [filter, setFilter] = useState("all");
 
   const projects = [
+    
     {
       id: 1,
       title: "Eniola Store",
@@ -100,6 +101,16 @@ const Projects = () => {
       technologies: ["React", "Next.js", "Tailwind CSS", "JavaScript"],
       category: "web",
       liveUrl: "#",
+    },
+    {
+      id: 9,
+      title: "Anon",
+      description:
+        "Anon provides a simple interface for creating groups and having discussions.",
+      image: "/src/assets/projects/anon.png",
+      technologies: ["React", "Next.js", "Tailwind CSS", "JavaScript", "NextJS", "Cloudinary", "Cypress", "MongoDB", "Prisma"],
+      category: "web",
+      liveUrl: "https://anon-posts.vercel.app/",
     },
     {
       id: 10,
