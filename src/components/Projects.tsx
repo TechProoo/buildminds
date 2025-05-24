@@ -7,12 +7,13 @@ const Projects = () => {
   const [filter, setFilter] = useState("all");
 
   const projects = [
+    
     {
       id: 1,
       title: "Eniola Store",
       description:
         "An e-commerce platform enabling market vendors to showcase products while allowing users to connect and contact vendors to make purchases. The platform ensures secure authentication with OAuth2 and integrates PostgreSQL for robust data management.",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
+      image: "/src/assets/projects/eniola-store.png",
       technologies: ["Next.js", "PostgreSQL", "OAuth2", "React"],
       category: "web",
       featured: true,
@@ -24,7 +25,7 @@ const Projects = () => {
       title: "Habitual",
       description:
         "A productivity web app with a structured API for precise habit tracking, goal setting, and team collaboration. It allows users to create and monitor daily habits, set long-term goals, and collaborate efficiently within teams.",
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
+      image: "/src/assets/projects/habitual.png",
       technologies: ["NestJS", "React", "PostgreSQL", "Node.js"],
       category: "web",
       liveUrl: "https://habitual-coded.netlify.app/",
@@ -39,6 +40,7 @@ const Projects = () => {
       technologies: ["Node.js", "Redis", "WebSockets", "Telegram API"],
       category: "blockchain",
       githubUrl: "#",
+      liveUrl: "https://t.me/buildminds_copperx_payout_bot",
     },
     {
       id: 4,
@@ -103,6 +105,40 @@ const Projects = () => {
     },
     {
       id: 10,
+      title: "Anon",
+      description:
+        "Anon provides a simple interface for creating groups and having discussions.",
+      image: "/src/assets/projects/anon.png",
+      technologies: ["React", "Next.js", "Tailwind CSS", "JavaScript", "NextJS", "Cloudinary", "Cypress", "MongoDB", "Prisma"],
+      category: "web",
+      liveUrl: "https://anon-posts.vercel.app/",
+    },
+    {
+      id: 11,
+      title: "9jamarket",
+      description:
+        "A revolutionary digital trade platform connecting traditional markets, vendors, and consumers across Nigeria. The platform bridges the gap between local markets and digital commerce, enabling vendors to showcase their products online while providing customers with real-time inventory, price comparisons, and secure payment options. Features include geo-location services for nearby markets, multi-language support for local dialects, integrated logistics for delivery coordination, and a robust vendor verification system to ensure authentic Nigerian products reach customers nationwide.",
+      image: "/src/assets/projects/9jamarket.png",
+      technologies: ["React", "Node.js", "MongoDB", "Express", "Socket.io", "Paystack"],
+      category: "web",
+      featured: true,
+      liveUrl: "https://9jamarket.com",
+      githubUrl: "https://github.com/prospercoded/9jamarket-Frontend",
+    },
+    {
+      id: 12,
+      title: "UniNav",
+      description:
+        "A collaborative university study materials platform that revolutionizes how students access and share academic resources. UniNav allows students to upload, organize, and discover essential course-related materials structured by faculty and department. The platform features advanced search functionality, peer review systems, version control for study materials, discussion forums for each resource, and analytics to track the most helpful content. With seamless integration across different file formats, automated categorization, and a robust rating system, UniNav enhances academic collaboration and builds a comprehensive knowledge base that grows with each student contribution.",
+      image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570",
+      technologies: ["React", "Node.js", "PostgreSQL", "Express", "Socket.io", "Elasticsearch", "NestJS"],
+      category: "web",
+      featured: true,
+      liveUrl: "https://uninav.live",
+      githubUrl: "https://github.com/prospercoded/uninav",
+    },
+    {
+      id: 13,
       title: "Perfect Arts",
       description:
         "A black-and-white themed portfolio website for a renowned hyperrealism artist. With an improved SEO strategy, this website ranks no. 1 on the Google search engine for relevant search terms.",
