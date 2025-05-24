@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from 'react';
 
 const ShootingStars = () => {
@@ -7,7 +6,7 @@ const ShootingStars = () => {
   useEffect(() => {
     const createShootingStar = () => {
       const id = Date.now() + Math.random();
-      const delay = Math.random() * 8000; // Random delay up to 8 seconds
+      const delay = Math.random() * 12000; // Random delay up to 12 seconds
       const duration = 2000 + Math.random() * 2000; // Duration between 2-4 seconds
       
       setStars(prev => [...prev, { id, delay, duration }]);
@@ -18,12 +17,12 @@ const ShootingStars = () => {
       }, delay + duration);
     };
 
-    // Create shooting stars at random intervals
+    // Create shooting stars at random intervals (less frequent)
     const interval = setInterval(() => {
-      if (Math.random() < 0.3) { // 30% chance every interval
+      if (Math.random() < 0.2) { // 20% chance every interval (reduced from 30%)
         createShootingStar();
       }
-    }, 3000);
+    }, 5000); // Increased interval to 5 seconds
 
     return () => clearInterval(interval);
   }, []);
@@ -38,7 +37,7 @@ const ShootingStars = () => {
             top: `${Math.random() * 30}%`,
             left: `${Math.random() * 100}%`,
             animation: `shooting ${star.duration}ms linear ${star.delay}ms forwards`,
-            boxShadow: '0 0 6px #fff, 0 0 12px rgba(33, 150, 243, 0.8)',
+            boxShadow: '0 0 4px rgba(255, 255, 255, 0.8), 0 0 8px rgba(150, 200, 255, 0.6)',
           }}
         />
       ))}
