@@ -41,6 +41,7 @@ const ProjectCard = ({
           <img
             src={image}
             alt={title}
+            loading="lazy"
             className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110 opacity-80"
             style={{filter: "contrast(1.1) brightness(0.9)"}}
           />

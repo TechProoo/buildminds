@@ -11,7 +11,7 @@ const AboutUs = () => {
       image: "/src/assets/team/prospercoded.png",
       links: {
         github: "https://github.com/prospercoded",
-        linkedin: "https://linkedin.com/in/prosper-enwem",
+        linkedin: "https://linkedin.com/in/prospercoded",
         email: "enweremproper@gmail.com",
       },
     },
